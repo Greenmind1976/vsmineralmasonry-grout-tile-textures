@@ -1,0 +1,14 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "vsmineralmasonrygrouttiles",
+    "name": "VSMineralMasonry - Grout and Tile Textures",
+    "authors": [
+        "Greenmind"
+    ],
+    "description": "Standalone grout placement, grout tools, rock grout, and decorative tile grout from VSMineralMasonry.",
+    "version": "1.22.0",
+    "dependencies": {
+        "game": "1.22.0-rc.8"
+    }
+}

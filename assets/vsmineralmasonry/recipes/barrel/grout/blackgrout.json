@@ -1,0 +1,22 @@
+{
+  "code": "grout-black",
+  "sealHours": 8,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:dye-black",
+      "litres": 1,
+      "consumeLitres": 1
+    },
+    {
+      "type": "item",
+      "code": "game:mortar",
+      "quantity": 10
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonry:grout-black",
+    "stackSize": 50
+  }
+}

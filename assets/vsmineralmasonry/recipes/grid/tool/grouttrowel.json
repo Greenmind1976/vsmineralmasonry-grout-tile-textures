@@ -1,0 +1,32 @@
+{
+  "ingredientPattern": "P\nS",
+  "ingredients": {
+    "S": {
+      "type": "item",
+      "code": "game:stick"
+    },
+    "P": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": [
+        "copper",
+        "tinbronze",
+        "bismuthbronze",
+        "blackbronze",
+        "iron",
+        "meteoriciron",
+        "steel",
+        "gold",
+        "silver"
+      ]
+    }
+  },
+  "width": 1,
+  "height": 2,
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonry:grouttrowel-{metal}",
+    "quantity": 1
+  }
+}

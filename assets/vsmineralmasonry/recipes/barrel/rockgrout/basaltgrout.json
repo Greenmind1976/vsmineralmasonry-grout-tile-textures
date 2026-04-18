@@ -1,0 +1,22 @@
+{
+  "code": "rockgrout-basalt",
+  "sealHours": 8,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "vsmineralmasonry:stoneslurry-basalt",
+      "litres": 10,
+      "consumeLitres": 10
+    },
+    {
+      "type": "item",
+      "code": "game:mortar",
+      "quantity": 10
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonry:rockgrout-basalt",
+    "stackSize": 50
+  }
+}

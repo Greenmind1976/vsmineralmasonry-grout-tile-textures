@@ -1,0 +1,204 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "sponge": [
+      16,
+      16
+    ],
+    "scrub": [
+      16,
+      16
+    ]
+  },
+  "textures": {
+    "sponge": "block/hay/bundle",
+    "scrub": "block/wood/planks/aged/aged1"
+  },
+  "elements": [
+    {
+      "name": "spongeBody",
+      "from": [
+        2.5,
+        4.5,
+        4
+      ],
+      "to": [
+        13.5,
+        8.5,
+        12
+      ],
+      "rotationOrigin": [
+        8.0,
+        6.65,
+        8.0
+      ],
+      "rotationX": -18.0,
+      "rotationY": 24.0,
+      "rotationZ": 138.0,
+      "faces": {
+        "north": {
+          "texture": "#sponge",
+          "uv": [
+            0,
+            6,
+            11,
+            12
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "east": {
+          "texture": "#sponge",
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "south": {
+          "texture": "#sponge",
+          "uv": [
+            0,
+            6,
+            11,
+            12
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "west": {
+          "texture": "#sponge",
+          "uv": [
+            0,
+            0,
+            8,
+            6
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "up": {
+          "texture": "#sponge",
+          "uv": [
+            2.5,
+            4,
+            13.5,
+            12
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "down": {
+          "texture": "#sponge",
+          "uv": [
+            0,
+            6,
+            11,
+            12
+          ],
+          "rotation": 180,
+          "autoUv": false,
+          "snapUv": false
+        }
+      }
+    },
+    {
+      "name": "spongeTop",
+      "from": [
+        2.5,
+        7.8,
+        4.5
+      ],
+      "to": [
+        13.5,
+        9.8,
+        11.5
+      ],
+      "rotationOrigin": [
+        8.0,
+        6.65,
+        8.0
+      ],
+      "rotationX": -18.0,
+      "rotationY": 24.0,
+      "rotationZ": 138.0,
+      "faces": {
+        "north": {
+          "texture": "#scrub",
+          "uv": [
+            0,
+            0,
+            10,
+            2
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "east": {
+          "texture": "#scrub",
+          "uv": [
+            0,
+            0,
+            7,
+            2
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "south": {
+          "texture": "#scrub",
+          "uv": [
+            0,
+            0,
+            10,
+            2
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "west": {
+          "texture": "#scrub",
+          "uv": [
+            0,
+            0,
+            7,
+            2
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "up": {
+          "texture": "#scrub",
+          "uv": [
+            3,
+            4.5,
+            13,
+            11.5
+          ],
+          "autoUv": false,
+          "snapUv": false
+        },
+        "down": {
+          "texture": "#scrub",
+          "uv": [
+            3,
+            4.5,
+            13,
+            11.5
+          ],
+          "rotation": 180,
+          "autoUv": false,
+          "snapUv": false
+        }
+      }
+    }
+  ]
+}
