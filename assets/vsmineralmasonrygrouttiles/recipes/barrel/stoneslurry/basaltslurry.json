@@ -1,0 +1,8 @@
+{
+  "code": "stoneslurry-basalt",
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 10 },
+    { "type": "item", "code": "vsmineralmasonrygrouttiles:granules-basalt", "quantity": 10 }
+  ],
+  "output": { "type": "item", "code": "vsmineralmasonrygrouttiles:stoneslurry-basalt", "litres": 20 }
+}

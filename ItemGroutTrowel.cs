@@ -11,7 +11,7 @@ namespace VSMineralMasonry;
 
 public class ItemGroutTrowel : Item
 {
-    private const string ToolModeCodeAttribute = "vsmineralmasonry:trowelShapeCode";
+    private const string ToolModeCodeAttribute = "vsmineralmasonrygrouttiles:trowelShapeCode";
     private static readonly string[] GroutShapeModes =
     [
         "solid",
@@ -712,13 +712,13 @@ public class ItemGroutTrowel : Item
         string? relativePath = shapeCode switch
         {
             var code when code.StartsWith("tileset", System.StringComparison.Ordinal)
-                => IOPath.Combine("assets", "vsmineralmasonry", "textures", "block", "stone", "grouttilecolor", $"{shapeCode}-{color}-{representativePart}.png"),
+                => IOPath.Combine("assets", "vsmineralmasonrygrouttiles", "textures", "block", "stone", "grouttilecolor", $"{shapeCode}-{color}-{representativePart}.png"),
             "border" or "frame"
-                => IOPath.Combine("assets", "vsmineralmasonry", "textures", "block", "stone", "grout", $"{color}-frame.png"),
+                => IOPath.Combine("assets", "vsmineralmasonrygrouttiles", "textures", "block", "stone", "grout", $"{color}-frame.png"),
             "top" or "right" or "bottom" or "left" or "topleft" or "topright" or "bottomright" or "bottomleft"
-                => IOPath.Combine("assets", "vsmineralmasonry", "textures", "block", "stone", "triangleoverlay", $"whitemarble-{shapeCode}.png"),
+                => IOPath.Combine("assets", "vsmineralmasonrygrouttiles", "textures", "block", "stone", "triangleoverlay", $"whitemarble-{shapeCode}.png"),
             "blob"
-                => IOPath.Combine("assets", "vsmineralmasonry", "textures", "block", "stone", "grout", $"{color}-blob.png"),
+                => IOPath.Combine("assets", "vsmineralmasonrygrouttiles", "textures", "block", "stone", "grout", $"{color}-blob.png"),
             _ => null
         };
 

@@ -1,0 +1,22 @@
+{
+  "code": "rockgrout-shale",
+  "sealHours": 8,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "vsmineralmasonrygrouttiles:stoneslurry-shale",
+      "litres": 10,
+      "consumeLitres": 10
+    },
+    {
+      "type": "item",
+      "code": "game:mortar",
+      "quantity": 10
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonrygrouttiles:rockgrout-shale",
+    "stackSize": 50
+  }
+}

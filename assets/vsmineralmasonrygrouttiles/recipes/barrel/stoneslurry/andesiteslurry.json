@@ -1,0 +1,8 @@
+{
+  "code": "stoneslurry-andesite",
+  "ingredients": [
+    { "type": "item", "code": "game:waterportion", "litres": 10 },
+    { "type": "item", "code": "vsmineralmasonrygrouttiles:granules-andesite", "quantity": 10 }
+  ],
+  "output": { "type": "item", "code": "vsmineralmasonrygrouttiles:stoneslurry-andesite", "litres": 20 }
+}

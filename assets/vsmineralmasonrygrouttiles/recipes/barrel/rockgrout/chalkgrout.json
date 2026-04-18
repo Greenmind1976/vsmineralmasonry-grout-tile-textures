@@ -1,0 +1,22 @@
+{
+  "code": "rockgrout-chalk",
+  "sealHours": 8,
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "vsmineralmasonrygrouttiles:stoneslurry-chalk",
+      "litres": 10,
+      "consumeLitres": 10
+    },
+    {
+      "type": "item",
+      "code": "game:mortar",
+      "quantity": 10
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonrygrouttiles:rockgrout-chalk",
+    "stackSize": 50
+  }
+}

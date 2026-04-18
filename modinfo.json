@@ -7,8 +7,8 @@
         "Greenmind"
     ],
     "description": "Standalone grout placement, grout tools, rock grout, and decorative tile grout from VSMineralMasonry.",
-    "version": "1.22.0",
+    "version": "1.21.0",
     "dependencies": {
-        "game": "1.22.0-rc.8"
+        "game": "1.21.0"
     }
 }
