@@ -63,6 +63,7 @@ cd "$ROOT_DIR"
 
 VS_APP_DIR="${VINTAGE_STORY:-/Applications/Vintage Story 1.21.7.app}"
 VS_MODS_DIR="$VS_APP_DIR/Mods"
+VS_EXECUTABLE="$VS_APP_DIR/Vintagestory"
 MOD_BUILD_DIR="$ROOT_DIR/bin/Debug/Mods/mod"
 INSTALL_DIR="$VS_MODS_DIR/$MOD_ID"
 
@@ -116,6 +117,14 @@ echo
 echo "Installed to:"
 echo "  $INSTALL_DIR"
 
-if [[ -n "$VS_APP_DIR" ]]; then
-  open "$VS_APP_DIR"
+if [[ ! -x "$VS_EXECUTABLE" ]]; then
+  echo
+  echo "Vintage Story 1.21.7 executable not found at: $VS_EXECUTABLE"
+  echo "Check that the app bundle contains the Vintagestory executable."
+  exit 0
 fi
+
+echo
+echo "Launching Vintage Story 1.21.7 via:"
+echo "  $VS_EXECUTABLE"
+"$VS_EXECUTABLE" >/dev/null 2>&1 &
