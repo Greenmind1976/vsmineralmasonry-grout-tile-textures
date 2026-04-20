@@ -64,6 +64,7 @@ cd "$ROOT_DIR"
 VS_APP_DIR="${VINTAGE_STORY:-/Applications/Vintage Story 1.21.7.app}"
 VS_MODS_DIR="$VS_APP_DIR/Mods"
 VS_EXECUTABLE="$VS_APP_DIR/Vintagestory"
+VS_DATA_PATH="$HOME/Library/Application Support/VintagestoryData-1.21.7"
 MOD_BUILD_DIR="$ROOT_DIR/bin/Debug/Mods/mod"
 INSTALL_DIR="$VS_MODS_DIR/$MOD_ID"
 
@@ -127,4 +128,7 @@ fi
 echo
 echo "Launching Vintage Story 1.21.7 via:"
 echo "  $VS_EXECUTABLE"
-"$VS_EXECUTABLE" >/dev/null 2>&1 &
+echo "Using data path:"
+echo "  $VS_DATA_PATH"
+mkdir -p "$VS_DATA_PATH"
+"$VS_EXECUTABLE" --dataPath "$VS_DATA_PATH" >/dev/null 2>&1 &
