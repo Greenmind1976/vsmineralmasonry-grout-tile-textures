@@ -2,12 +2,12 @@
 set -euo pipefail
 
 ###############################################################################
-# Build + Install VSMineralMasonry.GroutTileTextures into Vintage Story 1.21.7
+# Build + Install VSMineralMasonry.GroutTileTextures into Vintage Story 1.22
 ###############################################################################
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CURRENT_BRANCH="$(git -C "$ROOT_DIR" branch --show-current 2>/dev/null || true)"
-TARGET_BRANCH="support/1.21"
+TARGET_BRANCH="support/1.22"
 CURRENT_HEAD="$(git -C "$ROOT_DIR" rev-parse HEAD 2>/dev/null || true)"
 TARGET_HEAD="$(git -C "$ROOT_DIR" rev-parse "$TARGET_BRANCH" 2>/dev/null || true)"
 PROJECT_NAME="VSMineralMasonry.GroutTileTextures"
@@ -46,7 +46,7 @@ if [[ "$CURRENT_BRANCH" != "$TARGET_BRANCH" ]]; then
       if git -C "$ROOT_DIR" show-ref --verify --quiet "refs/heads/$TARGET_BRANCH"; then
         echo "No separate worktree found. Switching current repo to $TARGET_BRANCH."
         git -C "$ROOT_DIR" checkout "$TARGET_BRANCH"
-        exec "$ROOT_DIR/build-install.sh" "$@"
+        exec "$ROOT_DIR/build-122-install.sh" "$@"
       fi
 
       echo "ERROR: Could not find worktree or local branch for $TARGET_BRANCH" >&2
@@ -55,14 +55,15 @@ if [[ "$CURRENT_BRANCH" != "$TARGET_BRANCH" ]]; then
 
     echo "Switching to $TARGET_BRANCH worktree:"
     echo "  $TARGET_WORKTREE"
-    exec "$TARGET_WORKTREE/build-install.sh" "$@"
+    exec "$TARGET_WORKTREE/build-122-install.sh" "$@"
   fi
 fi
 
 cd "$ROOT_DIR"
 
-VS_APP_DIR="${VINTAGE_STORY:-/Applications/Vintage Story 1.21.7.app}"
+VS_APP_DIR="/Applications/Vintage Story 1.22.app"
 VS_MODS_DIR="$VS_APP_DIR/Mods"
+VS_LAUNCHER="$HOME/bin/vs-1.22"
 MOD_BUILD_DIR="$ROOT_DIR/bin/Debug/Mods/mod"
 INSTALL_DIR="$VS_MODS_DIR/$MOD_ID"
 
@@ -116,6 +117,14 @@ echo
 echo "Installed to:"
 echo "  $INSTALL_DIR"
 
-if [[ -n "$VS_APP_DIR" ]]; then
-  open "$VS_APP_DIR"
+if [[ ! -x "$VS_LAUNCHER" ]]; then
+  echo
+  echo "RC launcher not found at: $VS_LAUNCHER"
+  echo "Use ~/bin/vs-1.22 to start it with the local x64 .NET runtime once it exists."
+  exit 0
 fi
+
+echo
+echo "Launching Vintage Story 1.22 via:"
+echo "  $VS_LAUNCHER"
+"$VS_LAUNCHER" >/dev/null 2>&1 &
