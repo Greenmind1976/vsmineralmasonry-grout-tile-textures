@@ -1,0 +1,199 @@
+{
+  "code": "grouttrowel",
+  "class": "ItemGroutTrowel",
+  "variantgroups": [
+    {
+      "code": "metal",
+      "states": [
+        "copper",
+        "tinbronze",
+        "bismuthbronze",
+        "blackbronze",
+        "gold",
+        "silver",
+        "iron",
+        "meteoriciron",
+        "steel"
+      ]
+    }
+  ],
+  "shape": {
+    "base": "vsmineralmasonrygrouttiles:item/tool/grouttrowel"
+  },
+  "texturesByType": {
+    "*": {
+      "blade": {
+        "base": "game:block/metal/ingot/{metal}"
+      },
+      "ferrule": {
+        "base": "game:block/metal/ingot/{metal}"
+      },
+      "handle": {
+        "base": "vsmineralmasonrygrouttiles:item/tool/handle"
+      }
+    }
+  },
+  "damagedby": [
+    "blockbreaking",
+    "attacking"
+  ],
+  "tooltierbytype": {
+    "*-copper": 2,
+    "*-gold": 2,
+    "*-silver": 2,
+    "*-bismuthbronze": 3,
+    "*-tinbronze": 3,
+    "*-blackbronze": 3,
+    "*-iron": 4,
+    "*-meteoriciron": 4,
+    "*-steel": 5
+  },
+  "durabilitybytype": {
+    "grouttrowel-gold": 250,
+    "grouttrowel-silver": 250,
+    "grouttrowel-copper": 500,
+    "grouttrowel-tinbronze": 750,
+    "grouttrowel-bismuthbronze": 900,
+    "grouttrowel-blackbronze": 1100,
+    "grouttrowel-iron": 1800,
+    "grouttrowel-meteoriciron": 2100,
+    "grouttrowel-steel": 4500
+  },
+  "attackpowerbytype": {
+    "grouttrowel-copper": 1.25,
+    "grouttrowel-gold": 1.5,
+    "grouttrowel-silver": 1.5,
+    "grouttrowel-bismuthbronze": 1.5,
+    "grouttrowel-tinbronze": 1.75,
+    "grouttrowel-blackbronze": 2,
+    "grouttrowel-iron": 2.25,
+    "grouttrowel-meteoriciron": 2.35,
+    "grouttrowel-steel": 2.5
+  },
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 1,
+        "ctrlKey": true,
+        "selectionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1,
+          "z2": 1
+        },
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 0,
+          "y2": 0,
+          "z2": 0
+        }
+      }
+    }
+  ],
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "items": [
+      "*"
+    ],
+    "tools": [
+      "*"
+    ]
+  },
+  "attributes": {
+    "handbook": {
+      "include": true,
+      "groupBy": [
+        "grouttrowel-*"
+      ]
+    },
+    "groundStorageTransform": {
+      "translation": {
+        "x": 0.04,
+        "y": -0.38,
+        "z": 0.345
+      },
+      "rotation": {
+        "x": 26,
+        "y": 0,
+        "z": -47
+      },
+      "scale": 0.88
+    }
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": -0.15,
+      "y": -0.12,
+      "z": 0
+    },
+    "rotation": {
+      "x": 4,
+      "y": 90,
+      "z": -30
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.2,
+      "z": 0.5
+    },
+    "scale": 2
+  },
+  "guiTransform": {
+    "rotate": true,
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "scale": 1.9
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": -0.9,
+      "y": -0.6,
+      "z": -0.55
+    },
+    "rotation": {
+      "x": 1,
+      "y": 0,
+      "z": -40
+    },
+    "scale": 0.76
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 90,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.56
+    },
+    "scale": 3.0
+  }
+}

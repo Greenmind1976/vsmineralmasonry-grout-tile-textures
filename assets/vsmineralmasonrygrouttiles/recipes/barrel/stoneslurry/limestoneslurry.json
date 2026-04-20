@@ -1,0 +1,20 @@
+{
+  "code": "stoneslurry-limestone",
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:waterportion",
+      "litres": 10
+    },
+    {
+      "type": "item",
+      "code": "vsmineralmasonrygrouttiles:granules-limestone",
+      "quantity": 10
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonrygrouttiles:stoneslurry-limestone",
+    "litres": 20
+  }
+}

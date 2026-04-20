@@ -1,0 +1,122 @@
+{
+  "code": "grout",
+  "class": "ItemPlaceGrout",
+  "variantgroups": [
+    {
+      "code": "color",
+      "states": [
+        "black",
+        "white",
+        "orange",
+        "purple",
+        "pink",
+        "red",
+        "blue",
+        "green",
+        "yellow",
+        "grey"
+      ]
+    }
+  ],
+  "textures": {
+    "all": {
+      "base": "vsmineralmasonrygrouttiles:block/stone/grout/{color}-blob"
+    }
+  },
+  "creativeinventory": {
+    "general": [
+      "*-black",
+      "*-white",
+      "*-orange",
+      "*-purple",
+      "*-pink",
+      "*-red",
+      "*-blue",
+      "*-green",
+      "*-yellow",
+      "*-grey"
+    ],
+    "items": [
+      "*-black",
+      "*-white",
+      "*-orange",
+      "*-purple",
+      "*-pink",
+      "*-red",
+      "*-blue",
+      "*-green",
+      "*-yellow",
+      "*-grey"
+    ]
+  },
+  "maxstacksize": 64,
+  "materialDensity": 800,
+  "attributes": {
+    "handbook": {
+      "include": true
+    }
+  },
+  "guiTransform": {
+    "rotate": false,
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "scale": 1
+  },
+  "groundTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0.5
+    },
+    "scale": 1
+  },
+  "fpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 1
+  },
+  "tpHandTransform": {
+    "translation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "scale": 1
+  }
+}

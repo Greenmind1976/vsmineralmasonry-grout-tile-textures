@@ -1,0 +1,35 @@
+{
+  "ingredientPattern": "H\nR",
+  "ingredients": {
+    "H": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 1
+    },
+    "R": {
+      "type": "item",
+      "code": "game:stone-*",
+      "name": "rock",
+      "allowedVariants": [
+        "andesite",
+        "basalt",
+        "chalk",
+        "chert",
+        "granite",
+        "limestone",
+        "phyllite",
+        "shale",
+        "slate",
+        "whitemarble"
+      ]
+    }
+  },
+  "width": 1,
+  "height": 2,
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonrygrouttiles:granules-{rock}",
+    "quantity": 1
+  }
+}
