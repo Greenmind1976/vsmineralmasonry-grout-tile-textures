@@ -1,0 +1,20 @@
+{
+  "code": "stoneslurry-granite",
+  "ingredients": [
+    {
+      "type": "item",
+      "code": "game:waterportion",
+      "litres": 10
+    },
+    {
+      "type": "item",
+      "code": "vsmineralmasonrygrouttiles:granules-granite",
+      "quantity": 10
+    }
+  ],
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonrygrouttiles:stoneslurry-granite",
+    "litres": 20
+  }
+}

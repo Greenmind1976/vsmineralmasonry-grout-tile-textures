@@ -1,8 +1,0 @@
-{
-  "code": "stoneslurry-slate",
-  "ingredients": [
-    { "type": "item", "code": "game:waterportion", "litres": 10 },
-    { "type": "item", "code": "vsmineralmasonry:granules-slate", "quantity": 10 }
-  ],
-  "output": { "type": "item", "code": "vsmineralmasonry:stoneslurry-slate", "litres": 20 }
-}

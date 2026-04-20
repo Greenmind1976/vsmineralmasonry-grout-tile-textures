@@ -1,0 +1,32 @@
+{
+  "ingredientPattern": "_B_\nLGT",
+  "ingredients": {
+    "L": {
+      "type": "block",
+      "code": "game:linen-*",
+      "quantity": 1
+    },
+    "G": {
+      "type": "item",
+      "code": "game:drygrass",
+      "quantity": 4
+    },
+    "T": {
+      "type": "item",
+      "code": "game:flaxtwine",
+      "quantity": 1
+    },
+    "B": {
+      "type": "item",
+      "code": "game:plank-*",
+      "name": "wood"
+    }
+  },
+  "width": 3,
+  "height": 2,
+  "output": {
+    "type": "item",
+    "code": "vsmineralmasonrygrouttiles:groutsponge",
+    "quantity": 1
+  }
+}

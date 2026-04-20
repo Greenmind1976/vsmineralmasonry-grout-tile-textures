@@ -1,0 +1,90 @@
+{
+  "code": "thickgrouttestvsm",
+  "class": "BlockGroutCycle",
+  "behaviors": [
+    {
+      "name": "Decor",
+      "properties": {
+        "sides": [
+          "north",
+          "east",
+          "south",
+          "west",
+          "up",
+          "down"
+        ],
+        "notFullFace": true,
+        "thickness": 0.0,
+        "removable": false
+      }
+    }
+  ],
+  "variantgroups": [
+    {
+      "code": "part",
+      "states": [
+        "frame",
+        "top",
+        "left",
+        "right",
+        "bottom",
+        "topleft",
+        "topright",
+        "bottomleft",
+        "bottomright",
+        "blob"
+      ]
+    }
+  ],
+  "shapeInventory": {
+    "base": "game:block/basic/layers/0voxel",
+    "rotateX": 90
+  },
+  "textures": {
+    "all": {
+      "base": "vsmineralmasonrygrouttiles:block/stone/thickgrout/black-{part}"
+    }
+  },
+  "vertexflags": {
+    "zOffset": 1
+  },
+  "attributes": {
+    "ignoreSounds": true,
+    "trowelShapeParts": "frame,top,right,bottom,left,topleft,topright,bottomright,bottomleft,blob",
+    "trowelShapeLabels": "Full Border,Top,Right,Bottom,Left,Top Left,Top Right,Bottom Right,Bottom Left,Blob",
+    "handbook": {
+      "include": false
+    }
+  },
+  "renderPass": "Transparent",
+  "drawtype": "surfacelayer",
+  "doNotRenderAtLod2": true,
+  "randomizeRotations": false,
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "selectionBox": {
+    "x1": 0,
+    "y1": 0,
+    "z1": 0,
+    "x2": 1,
+    "y2": 1,
+    "z2": 1
+  },
+  "blockmaterial": "Stone",
+  "replaceable": 5500,
+  "resistance": 0,
+  "lightAbsorption": 0,
+  "drops": [],
+  "materialDensity": 400,
+  "guiTransform": {
+    "origin": {
+      "x": 0.5,
+      "y": 0.5,
+      "z": 0
+    }
+  }
+}
