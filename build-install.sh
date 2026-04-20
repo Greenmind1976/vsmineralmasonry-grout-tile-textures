@@ -61,7 +61,7 @@ fi
 
 cd "$ROOT_DIR"
 
-VS_APP_DIR="${VINTAGE_STORY:-/Applications/Vintage Story 1.21.7.app}"
+VS_APP_DIR="/Applications/Vintage Story 1.21.7.app"
 VS_MODS_DIR="$VS_APP_DIR/Mods"
 VS_EXECUTABLE="$VS_APP_DIR/Vintagestory"
 VS_DATA_PATH="$HOME/Library/Application Support/VintagestoryData-1.21.7"
