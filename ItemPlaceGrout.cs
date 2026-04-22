@@ -40,7 +40,17 @@ public class ItemPlaceGrout : Item
         }
 
         BlockPos pos = blockSel.Position;
+        if (blockSel.Face == null)
+        {
+            return false;
+        }
+
         int decorIndex = (int)new DecorBits(blockSel.Face);
+
+        if (HasSameGroutMaterialOnFace(world, pos, blockSel.Face, groutBlock))
+        {
+            return true;
+        }
 
         if (world.Side != EnumAppSide.Server)
         {
@@ -56,5 +66,59 @@ public class ItemPlaceGrout : Item
         slot.TakeOut(1);
         slot.MarkDirty();
         return true;
+    }
+
+    private static bool HasSameGroutMaterialOnFace(IWorldAccessor world, BlockPos pos, BlockFacing face, Block groutBlock)
+    {
+        int faceIndex = (int)new DecorBits(face);
+        if (IsSameGroutMaterial(world.BlockAccessor.GetDecor(pos, faceIndex), groutBlock))
+        {
+            return true;
+        }
+
+        var subDecors = world.BlockAccessor.GetSubDecors(pos);
+        if (subDecors == null)
+        {
+            return false;
+        }
+
+        foreach (var entry in subDecors)
+        {
+            if (entry.Key % 6 == face.Index && IsSameGroutMaterial(entry.Value, groutBlock))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static bool IsSameGroutMaterial(Block? existingBlock, Block groutBlock)
+    {
+        string? existingMaterial = GetGroutMaterialKey(existingBlock);
+        string? newMaterial = GetGroutMaterialKey(groutBlock);
+        return existingMaterial != null && existingMaterial == newMaterial;
+    }
+
+    private static string? GetGroutMaterialKey(Block? block)
+    {
+        string? path = block?.Code?.Path;
+        if (string.IsNullOrEmpty(path))
+        {
+            return null;
+        }
+
+        string[] parts = path.Split('-');
+        if (parts.Length < 3)
+        {
+            return null;
+        }
+
+        return parts[0] switch
+        {
+            "groutvsm" or "grouttestvsm" or "grouttilevsm" => $"color:{parts[1]}",
+            "groutrockvsm" or "grouttilerockvsm" => $"rock:{parts[1]}",
+            _ => null
+        };
     }
 }
