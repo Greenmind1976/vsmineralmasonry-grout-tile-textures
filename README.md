@@ -10,6 +10,8 @@ Standalone Vintage Story mod for grout placement, grout tools, and decorative ti
 - Decorative grout tile textures
 - Triangle overlay and grout editing helpers
 
+Stone texture grout can also be used to cover mural slab blocks using the first tileset.
+
 ## Build
 
 Set `VINTAGE_STORY` to your Vintage Story app folder, then build the project:
