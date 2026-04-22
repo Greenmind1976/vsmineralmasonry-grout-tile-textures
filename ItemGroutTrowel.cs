@@ -228,7 +228,7 @@ public class ItemGroutTrowel : Item
         bool changed = world.BlockAccessor.SetDecor(nextBlock, target.Position, target.DecorIndex);
         if (changed)
         {
-            slot.Itemstack?.Collectible.DamageItem(world, byEntity, slot, 1);
+            slot.Itemstack?.Collectible.DamageItem(world, byEntity, slot, 1, false);
         }
 
         return changed;
