@@ -17,6 +17,7 @@ It gives builders a way to change how stone faces read without replacing the who
 - Adding trim lines and contrast to stone builds
 - Creating tiled floors, panels, and decorative wall insets
 - Matching grout tones to specific rock families
+- Covering mural slab blocks with stone texture grout using the first tileset
 - Iterating on details with placement and removal tools instead of rebuilding sections
 
 ## Build
